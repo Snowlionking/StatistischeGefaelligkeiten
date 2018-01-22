@@ -1,4 +1,4 @@
-.pdf
-.log
-.toc
-.aux
+*.pdf
+*.log
+*.toc
+*.aux
