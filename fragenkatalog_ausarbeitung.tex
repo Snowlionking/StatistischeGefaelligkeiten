@@ -3,6 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{amssymb}
 \usepackage{amsmath}
+%\usepackage{textcomp}
 %\usepackage{math}
 %\usepackage{tcolorbox}
 \usepackage{collectbox}
@@ -27,8 +28,7 @@
   \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Deskriptive Statistik}
-\subsection{Berechne für eine gegebene Stichprobe zu den Klassengrenzen ... alle relativen Häufigkeiten und zeichne ein skaliertes Histogramm
-mit relativen Häufigkeiten, wobei der Flächeninhalt der Balken den Häufigkeiten entsprechen soll.}
+\subsection{Berechne für eine gegebene Stichprobe zu den Klassengrenzen ... alle relativen Häufigkeiten und zeichne ein skaliertes Histogramm mit relativen Häufigkeiten, wobei der Flächeninhalt der Balken den Häufigkeiten entsprechen soll.}
 
 \subsection{Gegeben ist eine Häufigkeitstabelle. Berechne das arithmetische Mittel, die Standardabweichung, den Median, das $n$. Quartil und den Modus.}
 
@@ -37,31 +37,27 @@ mit relativen Häufigkeiten, wobei der Flächeninhalt der Balken den Häufigkeit
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Korrelation und Regression}
-\subsection{Berechne aus einer zweidimensionalen Stichprobe den Korrelationskoeffi-
-zienten und die Regressionsgerade $(a, b)$. Zeichne den Scatterplot und dort die
-Regressionsgerade ein.}
+\subsection{Berechne aus einer zweidimensionalen Stichprobe den Korrelationskoeffizienten und die Regressionsgerade $(a, b)$. Zeichne den Scatterplot und dort die Regressionsgerade ein.}
 
-\subsection{Was ist der Unterschied zwischen linearer Regression und einem linearen
-Regressionsmodell?}
+\subsection{Was ist der Unterschied zwischen linearer Regression und einem linearen Regressionsmodell?}
 
-\subsection{Zeige: Die Lösung einer linearen Regression ergibt sich aus der Lösung des li-
-nearen Gleichungssystems $C a = b$, wobei $a$ der Vektor der $m$ Parameter $a_1 , a_2 , . . .$
-ist, $C$ eine $m × m$ Matrix und $b$ ein $m$-Vektor ist mit\newline
+\subsection{Zeige: Die Lösung einer linearen Regression ergibt sich aus der Lösung des linearen Gleichungssystems $C a = b$, wobei $a$ der Vektor der $m$ Parameter $a_1 , a_2 , . . .$ ist, $C$ eine $m × m$ Matrix und $b$ ein $m$-Vektor ist mit\newline
 $C_{k,l}=\sum\limits_{i=1}^n f_k (x_i)f_l (x_i)$, $b_k = \sum\limits_{i=1}^n y_i f_k (x_i)$.}
 
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Ereignis- und Wahrscheinlichkeitsraum}
-\subsection{Zeige, dass ($\Omega, \Sigma$) = ({1, 2, 3, 4}, {$\emptyset$, {1, 2}, {3, 4}, {1, 2, 3, 4}}) ein Ereignisraum ist.}
+\subsection{Zeige, dass ($\Omega, \Sigma$) = (\{1, 2, 3, 4\}, \{$\emptyset$, \{1, 2\}, \{3, 4\}, \{1, 2, 3, 4\}\}) ein Ereignisraum ist.}
 
-\subsection{Für ($\Omega, \Sigma$) wie in 3.1 und $P$ ({1, 2}) = 0.3, vervollständige $P$, so dass ($\Omega, \Sigma, P$) ein Wahrscheinlichkeitsraum ist.}
+\subsection{Für ($\Omega, \Sigma$) wie in 3.1 und $P$ (\{1, 2\}) = 0.3, vervollständige $P$, so dass ($\Omega, \Sigma, P$) ein Wahrscheinlichkeitsraum ist.}
 
 \subsection{Beweise den Additionssatz.}
 
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Kombinatorik (Blatt 04)} %TODO
-\subsection{}%TODO
+Siehe PS-Beispiele.
+\subsection{}
 
 \subsection{}
 
@@ -98,55 +94,65 @@ teilung? Wo wird diese Verteilung verwendet?}
 
 \subsection{Beispiel ähnlich zu: Widerstände aus verschiedenen Schachteln ...}
 
-\subsection{Definiere die Kovarianz zweier Zufallsvariablen. Für $X$ und $Y$ unabhängig mit der gleichen Verteilung, zeige: V($X + Y$) = 2 V($X$),
-aber V(2$X$) = 4 V($X$).}
+\subsection{Definiere die Kovarianz zweier Zufallsvariablen. Für $X$ und $Y$ unabhängig mit der gleichen Verteilung, zeige: V($X + Y$) = 2 V($X$), aber V(2$X$) = 4 V($X$).}
 
-\subsection{X und Y unabhängig mit selber spezieller einfacher Dichtefunktion. Berechne $f_{X + Y}$.}
+\subsection{$X$ und $Y$ unabhängig mit selber spezieller einfacher Dichtefunktion. Berechne $f_{X + Y}$.}
 
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Zentraler Grenzwertsatz}
-\subsection{}
 
-\subsection{}
+\subsection{Zeige: Wenn $X \sim N_{0,1}$ , dann ist $\varphi_X = e^{- \frac{\omega^2}{2}}$. Vorgehensweise: Dichtefunktion ableiten, dann zeigen, dass $e^{- \frac{\omega^2}{2}}$ die dabei entstehende Differentialgleichung erfüllt.}
 
-\subsection{}
+%irgendwie fehlerhaft,liefert aber das gewünschte
+\subsection{Zeige: Es sei $Y_n:= \frac{1}{\sqrt{n}} (X_1 + X_2 + . . . + X_n)$ mit $X_k \sim N_{0,1}$ und unabhängig. Dann gilt $\varphi_{Y_{n}}(\omega)\xrightarrow{n\rightarrow \infty} e^{- \frac{\omega^2}{2}}$. Vorgangsweise: Zeige $\varphi_{Y_{n}}(\omega) = \varphi^{n}_{\frac{X}{\sqrt{x}}}$, setze die Exponentialreihe ein, behalte nur die ersten drei Glieder, erkläre, warum die anderen zu vernachlässigen sind, lasse dann unter Verwendung von $(1 + \frac{a}{n})^n \xrightarrow{n\rightarrow \infty} e^a$ das $n$ nach unendlich gehen.}
 
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Schätzer}
-\subsection{}
+\subsection{Schätzer entwickeln für spezielle einfache Verteilung mit Maximum Likelihood- oder Momentenmethode.}
 
-\subsection{}
+\subsection{Speziellen Schätzer auf Erwartungstreuheit überprüfen.}
 
-\subsection{}
+\subsection{Zeige, dass $s^2$ ein erwartungstreuer Schätzer für $V(X)$ ist.}
 
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Konfidenzintervalle}
-\subsection{}
+Die Formeln für die Konfidenzintervalle stehen auf dem Angabeblatt.
 
-\subsection{}
+\subsection{Für bestimme Stichprobe einer Normalverteilung Konfidenzintervall für $\mu$ und/oder $\sigma$ ausrechnen, wobei $\sigma$ bekannt/unbekannt sein kann. Siehe PS-Beispiele.}
 
-\subsection{}
+\subsection{Konfidenzintervall für bestimmte Stichprobe eines Bernoulli-Experiments ausrechnen. Siehe PS-Beispiele.}
+
+\subsection{Zeige: $\frac{n-1}{\sigma^2} s^2 \sim \chi^{2}_{n-1}$}
+
+\subsection{Zeige: $\frac{\bar{x} - \mu}{s/\sqrt{n}} \sim t_{n-1}$}
 
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Tests}
-\subsection{}
+Die Formeln für die Annahmebereiche stehen auf dem Angabeblatt.
 
-\subsection{}
+\subsection{Leite den Annahmebereich für den ein-/zweiseitigen t -Test her.}
 
-\subsection{}
+\subsection{$t$-Test/ANOVA/Binomialtest/$\chi^2$-Anpassungstest/$\chi^2$-Unabhängigkeitstest auf bestimmter Stichprobe durchführen.
+Siehe PS-Beispiele.}
+
+\subsection{Wie funktioniert der Kolmogorow-Smirnow-Test? Was ist die Nullhypothese?}
 
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Simulation}
-\subsection{}
+\subsection{Berechne Zufallszahlen mit dem additiven Kongruenzgenerator. Parameter und Seed sind gegeben, die Formel nicht.}
 
-\subsection{}
+\subsection{Formuliere die Methode der inversen Transformation für nicht-gleichverteilte Zufallsvariablen und beweise sie.}
 
-\subsection{}
+\subsection{Methode der inversen Transformation anwenden für einfache Verteilung.}
+
+\subsection{Was ist eine Monte-Carlo-Methode?}
+
+\subsection{Erkläre kurz die Vorgangsweise bei der Simulation zeitlicher Prozesse.}
 
 
 \end{document}
