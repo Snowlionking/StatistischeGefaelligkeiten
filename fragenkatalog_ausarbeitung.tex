@@ -145,14 +145,22 @@ Siehe PS-Beispiele.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Simulation}
 \subsection{Berechne Zufallszahlen mit dem additiven Kongruenzgenerator. Parameter und Seed sind gegeben, die Formel nicht.}
+Parameter sind $a, c, m$. Ziel ist es, eine Folge $x_i \in \mathbb{N}$ mittels: \newline $x_{i+1} = (a*x_i + c)$ mod $m$ zu berechnen.
 
 \subsection{Formuliere die Methode der inversen Transformation für nicht-gleichverteilte Zufallsvariablen und beweise sie.}
+Da Verteilungsfunktionen ($F$) bis auf Teilintervalle mit konstantem Funktionswert bijektiv sind, können Umkehrfunktionen (Quantilfunktionen) $F^-1$ gebildet werden. Die konstanten Teilintervalle werden bei der Umkehrung einfach zu Unstetigkeitsstellen. Ist nun $(x 1 , x2 , . . .)$ eine Folge von gleichverteilten Zufallszahlen, dann ist $(F^{-1} (x_1), F^{-1} (x_2), . . .)$ eine Folge von Zufallszahlen mit der Verteilungsfunktion $F$.\newline
+$Beweis.$ Wenn X gleichverteilt ist auf [0, 1], dann ist $P (X \leq x) = x$ und daher \newline 
+$P(F^{-1} (X) \leq x) = P (X \leq F (x)) = F (x) \Box$.
 
 \subsection{Methode der inversen Transformation anwenden für einfache Verteilung.}
+Exponentialverteilung: $f(x) = \beta e^{-\beta x}$, $F(x) = 1 − e^{−\beta x}$ für $x > 0$. Es folgt $F^{-1} (y) = −\frac{1}{\beta} ln(1 - y)$. Mit obigen Zufallszahlen erhalten wir für $\beta = 1$:\newline
+(0.8214, 0.599, 1.5027, 0.281, 1.2407).
 
 \subsection{Was ist eine Monte-Carlo-Methode?}
+Mit Monte-Carlo-Methoden berechnet man näherungsweise numerische Integrale. Wenn $g : [0, 1] \rightarrow \mathbb{R}$ und $X$ auf $[0, 1]$ gleichverteilt ist, dann ist E($g (X)$) =$\int_0^1$ g($x$) dx. Die Vorgangsweise ist nun, $n$ Zufallszahlen $x_1 , . . . , x_n$ mit einer Gleichverteilung auf [0, 1] zu erzeugen. Mit $y_i := g (x_i)$ ist \={y} ein Schätzwert für $\int_0^1 g(x_i)dx$.
+
 
 \subsection{Erkläre kurz die Vorgangsweise bei der Simulation zeitlicher Prozesse.}
-
+Bei der Simulation zeitlicher Prozesse werden Ereignisse in chronologischer Abfolge nachgebildet. Das System hat einen aktuellen Zustand und einen aktuellen Zeitpunkt. Iterativ wird der aktuelle Zeitpunkt auf das nächste Ereignis verschoben und der neue Systemzustand berechnet.
 
 \end{document}
