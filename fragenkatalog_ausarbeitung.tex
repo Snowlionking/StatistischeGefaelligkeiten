@@ -6,7 +6,8 @@
 %\usepackage{textcomp}
 %\usepackage{math}
 %\usepackage{tcolorbox}
-\usepackage{collectbox}
+% \usepackage{collectbox}
+\usepackage[ngerman]{babel}
 
 \title{Statistik Fragenkatalog - Ausarbeitung}
 \author{}
@@ -20,6 +21,13 @@
   %/Subject  ()
   %/Keywords ()
 }
+\usepackage%
+[%
+left=2cm,% left margin
+right=3cm,% right margin
+top=3cm, % top margin
+bottom=3cm,% bottom margin
+]{geometry}
 
 \begin{document}
   \maketitle
@@ -30,7 +38,8 @@
 \section{Deskriptive Statistik}
 \subsection{Berechne für eine gegebene Stichprobe zu den Klassengrenzen ... alle relativen Häufigkeiten und zeichne ein skaliertes Histogramm mit relativen Häufigkeiten, wobei der Flächeninhalt der Balken den Häufigkeiten entsprechen soll.}
 
-\subsection{Gegeben ist eine Häufigkeitstabelle. Berechne das arithmetische Mittel, die Standardabweichung, den Median, das $n$. Quartil und den Modus.}
+\subsection{Gegeben ist eine Häufigkeitstabelle. \\
+Berechne das arithmetische Mittel, die Standardabweichung, den Median, das $n$. Quartil und den Modus.}
 
 \subsection{Wie hängt das empirische Quantil mit der empirischen Verteilungsfunktion zusammen?}
 
@@ -49,7 +58,7 @@ $C_{k,l}=\sum\limits_{i=1}^n f_k (x_i)f_l (x_i)$, $b_k = \sum\limits_{i=1}^n y_i
 \section{Ereignis- und Wahrscheinlichkeitsraum}
 \subsection{Zeige, dass ($\Omega, \Sigma$) = (\{1, 2, 3, 4\}, \{$\emptyset$, \{1, 2\}, \{3, 4\}, \{1, 2, 3, 4\}\}) ein Ereignisraum ist.}
 
-\subsection{Für ($\Omega, \Sigma$) wie in 3.1 und $P$ (\{1, 2\}) = 0.3, vervollständige $P$, so dass ($\Omega, \Sigma, P$) ein Wahrscheinlichkeitsraum ist.}
+\subsection{Für ($\Omega, \Sigma$) wie in 3.1 und $P$ (\{1, 2\}) = 0.3, \\ vervollständige $P$, so dass ($\Omega, \Sigma, P$) ein Wahrscheinlichkeitsraum ist.}
 
 \subsection{Beweise den Additionssatz.}
 
@@ -66,11 +75,11 @@ Siehe PS-Beispiele.
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Bedingte Wahrscheinlichkeit}
-\subsection{Beispiel zu totaler Wahrscheinlichkeit und Entscheidungsbaum (ähnlich zu Glühlampenkartons aus PS).}
+\subsection{Bei\-spiel zu totaler Wahrschein\-lich\-keit und Entscheidungs\-baum (ähnlich zu Glüh\-lampen\-kartons aus PS).}
 
 \subsection{Beispiel zu Bayes (Blatt 05).}
 
-\subsection{Formuliere und beweise den Satz von Bayes für Bedingung/Gegenbedingung $B, \bar{B}$.}
+\subsection{Formuliere und beweise den Satz von Bayes für Bedingung / Gegenbedingung $B, \bar{B}$.}
 
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -79,11 +88,11 @@ Siehe PS-Beispiele.
 
 \subsection{Definiere die Binomial-/geometrische Verteilung und leite Erwartungswert und Varianz her.}
 
-\subsection{Erwartungswert herleiten für Poissonverteilung $f_X (k)=\frac{\lambda^k}{k!}e^{-\lambda}$.}
+\subsection{Erwartungswert herleiten für Poisson\-verteilung \\ $f_X (k)=\frac{\lambda^k}{k!}e^{-\lambda}$.}
 
 \subsection{Erwartungswert herleiten für Normalverteilung. Hinweis: zuerst Dichtefunktion differenzieren.}
 
-\subsection{Definiere die Exponentialverteilung. Leite Verteilungsfunktion und Erwartungswert her.}
+\subsection{Definiere die Exponentialverteilung. \\ Leite Verteilungsfunktion und Erwartungswert her.}
 
 \subsection{Beispiel zur Poissonapproximation.}
 
@@ -94,7 +103,7 @@ teilung? Wo wird diese Verteilung verwendet?}
 
 \subsection{Beispiel ähnlich zu: Widerstände aus verschiedenen Schachteln ...}
 
-\subsection{Definiere die Kovarianz zweier Zufallsvariablen. Für $X$ und $Y$ unabhängig mit der gleichen Verteilung, zeige: V($X + Y$) = 2 V($X$), aber V(2$X$) = 4 V($X$).}
+\subsection{Definiere die Ko\-varianz zweier Zufalls\-variablen. \\ Für $X$ und $Y$ un\-abhängig mit der gleichen Ver\-teilung, zeige: V($X + Y$) = 2 V($X$), aber V(2$X$) = 4 V($X$).}
 
 \subsection{$X$ und $Y$ unabhängig mit selber spezieller einfacher Dichtefunktion. Berechne $f_{X + Y}$.}
 
@@ -110,9 +119,9 @@ teilung? Wo wird diese Verteilung verwendet?}
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Schätzer}
-\subsection{Schätzer entwickeln für spezielle einfache Verteilung mit Maximum Likelihood- oder Momentenmethode.}
+\subsection{Schätz\-er ent\-wick\-eln für spe\-ziel\-le ein\-fache \\ Ver\-teil\-ung mit Maximum Likeli\-hood- oder Momenten\-methode.}
 
-\subsection{Speziellen Schätzer auf Erwartungstreuheit überprüfen.}
+\subsection{Speziellen Schätzer auf Erwartungs\-treuheit \\ überprüfen.}
 
 \subsection{Zeige, dass $s^2$ ein erwartungstreuer Schätzer für $V(X)$ ist.}
 
@@ -121,9 +130,10 @@ teilung? Wo wird diese Verteilung verwendet?}
 \section{Konfidenzintervalle}
 Die Formeln für die Konfidenzintervalle stehen auf dem Angabeblatt.
 
-\subsection{Für bestimme Stichprobe einer Normalverteilung Konfidenzintervall für $\mu$ und/oder $\sigma$ ausrechnen, wobei $\sigma$ bekannt/unbekannt sein kann. Siehe PS-Beispiele.}
+\subsection{Für be\-stimme Stich\-probe ein\-er Normal\-ver\-teil\-ung Kon\-fi\-denz\-in\-ter\-vall für $\mu$ und / oder $\sigma$ aus\-rechnen, wo\-bei $\sigma$ be\-kannt / un\-be\-kannt sein kann. \\
+Siehe PS-Bei\-spiele.}
 
-\subsection{Konfidenzintervall für bestimmte Stichprobe eines Bernoulli-Experiments ausrechnen. Siehe PS-Beispiele.}
+\subsection{Konfidenz\-intervall für be\-stimmte Stich\-probe \\ eines Bern\-oulli-\-Ex\-peri\-ments ausrechnen. \\ Siehe PS-Bei\-spiele.}
 
 \subsection{Zeige: $\frac{n-1}{\sigma^2} s^2 \sim \chi^{2}_{n-1}$}
 
@@ -136,31 +146,22 @@ Die Formeln für die Annahmebereiche stehen auf dem Angabeblatt.
 
 \subsection{Leite den Annahmebereich für den ein-/zweiseitigen t -Test her.}
 
-\subsection{$t$-Test/ANOVA/Binomialtest/$\chi^2$-Anpassungstest/$\chi^2$-Unabhängigkeitstest auf bestimmter Stichprobe durchführen.
-Siehe PS-Beispiele.}
+\subsection{$t$-Test/ANOVA/Binomial\-test/$\chi^2$-Anpassungs\-test/\\$\chi^2$-Unabhängigkeits\-test auf bestimmter Stich\-probe durchführen. \\ Siehe PS-Beispiele.}
 
-\subsection{Wie funktioniert der Kolmogorow-Smirnow-Test? Was ist die Nullhypothese?}
+\subsection{Wie funktioniert der Kolmogorow-Smirnow-Test? \\ Was ist die Nullhypothese?}
 
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Simulation}
-\subsection{Berechne Zufallszahlen mit dem additiven Kongruenzgenerator. Parameter und Seed sind gegeben, die Formel nicht.}
-Parameter sind $a, c, m$. Ziel ist es, eine Folge $x_i \in \mathbb{N}$ mittels: \newline $x_{i+1} = (a*x_i + c)$ mod $m$ zu berechnen.
+\subsection{Berechne Zufallszahlen mit dem additiven Kongruenz\-generator.
+\\ Parameter und Seed sind gegeben, die Formel nicht.}
 
-\subsection{Formuliere die Methode der inversen Transformation für nicht-gleichverteilte Zufallsvariablen und beweise sie.}
-Da Verteilungsfunktionen ($F$) bis auf Teilintervalle mit konstantem Funktionswert bijektiv sind, können Umkehrfunktionen (Quantilfunktionen) $F^-1$ gebildet werden. Die konstanten Teilintervalle werden bei der Umkehrung einfach zu Unstetigkeitsstellen. Ist nun $(x 1 , x2 , . . .)$ eine Folge von gleichverteilten Zufallszahlen, dann ist $(F^{-1} (x_1), F^{-1} (x_2), . . .)$ eine Folge von Zufallszahlen mit der Verteilungsfunktion $F$.\newline
-$Beweis.$ Wenn X gleichverteilt ist auf [0, 1], dann ist $P (X \leq x) = x$ und daher \newline 
-$P(F^{-1} (X) \leq x) = P (X \leq F (x)) = F (x) \Box$.
+\subsection{Formuliere die Methode der in\-versen Trans\-for\-ma\-tion für nicht-\-gleich\-ver\-teilte Zufallsvariablen und beweise sie.}
 
 \subsection{Methode der inversen Transformation anwenden für einfache Verteilung.}
-Exponentialverteilung: $f(x) = \beta e^{-\beta x}$, $F(x) = 1 − e^{−\beta x}$ für $x > 0$. Es folgt $F^{-1} (y) = −\frac{1}{\beta} ln(1 - y)$. Mit obigen Zufallszahlen erhalten wir für $\beta = 1$:\newline
-(0.8214, 0.599, 1.5027, 0.281, 1.2407).
 
 \subsection{Was ist eine Monte-Carlo-Methode?}
-Mit Monte-Carlo-Methoden berechnet man näherungsweise numerische Integrale. Wenn $g : [0, 1] \rightarrow \mathbb{R}$ und $X$ auf $[0, 1]$ gleichverteilt ist, dann ist E($g (X)$) =$\int_0^1$ g($x$) dx. Die Vorgangsweise ist nun, $n$ Zufallszahlen $x_1 , . . . , x_n$ mit einer Gleichverteilung auf [0, 1] zu erzeugen. Mit $y_i := g (x_i)$ ist \={y} ein Schätzwert für $\int_0^1 g(x_i)dx$.
-
 
 \subsection{Erkläre kurz die Vorgangsweise bei der Simulation zeitlicher Prozesse.}
-Bei der Simulation zeitlicher Prozesse werden Ereignisse in chronologischer Abfolge nachgebildet. Das System hat einen aktuellen Zustand und einen aktuellen Zeitpunkt. Iterativ wird der aktuelle Zeitpunkt auf das nächste Ereignis verschoben und der neue Systemzustand berechnet.
 
 \end{document}
